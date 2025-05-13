@@ -40,8 +40,14 @@ namespace series_of_numbers_02
             numbers.Clear();
             Console.WriteLine("Enter at least 3 positive numbers one after another (or type 'exit' to finish):");
             string numStr;
+            string messege;
             while (true)
             {
+                if (numbers.Count > 0)
+                {
+                    messege = numbers.Count >= 3 ? "enter another number or exit to finish" : "enter another number";
+                    Console.WriteLine(messege + "\n");
+                }
                 numStr = Console.ReadLine();
                 if (int.TryParse(numStr, out int number))
                 {
