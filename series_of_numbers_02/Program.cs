@@ -233,7 +233,7 @@ namespace series_of_numbers_02
                         Console.WriteLine($"the number of eivarim: {getLen(numbers)}");
                         break;
                     case "i":
-                        Console.WriteLine($"sum: {getAverage(numbers)}");
+                        Console.WriteLine($"sum: {getSum(numbers)}");
                         break;
                     case "j":
                         Console.WriteLine("have a good day");
