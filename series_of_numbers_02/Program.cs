@@ -10,16 +10,18 @@ namespace series_of_numbers_02
 {
     internal class Program
     {
-
+        // print a list in an interactive vewu
         static void printList(List<int> list)
         {
+            Console.Write("===  ");
             foreach (int num in list)
             {
                 Console.Write(num + " ");
             }
-            Console.WriteLine();
+            Console.WriteLine("  ===");
         }
 
+        // insert args when the program is initiolized
         static bool insertArgs(string[] args, List<int> numbers)
         {
             foreach(string arg in args)
@@ -32,6 +34,7 @@ namespace series_of_numbers_02
             return numbers.Count >= 3;
         }
 
+        // set new valews for the list
         static void askForArgs(List<int> numbers)
         {
             numbers.Clear();
@@ -73,7 +76,7 @@ namespace series_of_numbers_02
             Console.WriteLine("you have set the list succesffuly");
         }
 
-
+        // returen the list in revese order
         static List<int> showSeriesInReverse(List<int> numbers)
         {
             List<int> reversedSeries = new List<int>();
@@ -85,6 +88,7 @@ namespace series_of_numbers_02
             return reversedSeries;
         }
 
+        // returen the list in sorted order
         static List<int> showSeriesSorted(List<int> numbers)
         {
             List<int> copyList = new List<int>();
@@ -110,6 +114,7 @@ namespace series_of_numbers_02
             return sortedList;
         }
 
+        // returen the nax valew
         static int getMax(List<int> numbers)
         {
             int max = numbers[0];
@@ -123,6 +128,7 @@ namespace series_of_numbers_02
             return max;
         }
 
+        // returen the min valew
         static int getMin(List<int> numbers)
         {
             int min = numbers[0];
@@ -136,6 +142,7 @@ namespace series_of_numbers_02
             return min;
         }
 
+        // returen the average of list
         static double getAverage(List<int> numbers)
         {
             //double sum = 0;
@@ -148,11 +155,13 @@ namespace series_of_numbers_02
             return average;
         }
 
+        // returen the length of list
         static int getLen(List<int> numbers)
         {
             return numbers.Count;
         }
 
+        // returen the sum of list
         static double getSum(List<int> numbers)
         {
             double sum = 0;
@@ -163,6 +172,7 @@ namespace series_of_numbers_02
             return sum;
         }
 
+        // display the menu
         static string menu()
         {
             Console.WriteLine("\n\na. input a new series (replace the prives)\n" +
@@ -234,7 +244,6 @@ namespace series_of_numbers_02
                         break;
                 }
             }
-            
         }
     }
 }
