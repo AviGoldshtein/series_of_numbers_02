@@ -38,7 +38,7 @@ namespace series_of_numbers_02
         static void askForArgs(List<int> numbers)
         {
             numbers.Clear();
-            Console.WriteLine("Enter at least 3 positive numbers one after another (or type 'exit' to finish):");
+            Console.WriteLine("Enter at least 3 positive numbers one after another:");
             string numStr;
             string messege;
             while (true)
